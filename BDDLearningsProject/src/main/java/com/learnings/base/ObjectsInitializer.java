@@ -38,7 +38,7 @@ public class ObjectsInitializer {
 			chromeOptions.addArguments("--nosandbox");
 			chromeOptions.addArguments("--disable-dev-shm-usage");
 			chromeOptions.addArguments("-disable-browser-side-navigation");
-driver.set(new ChromeDriver());
+driver.set(new ChromeDriver(chromeOptions));
 
 
 
