@@ -24,7 +24,7 @@ public class ObjectsInitializer {
 	if(version  == null) {
 		if(browserName.contains("Chrome")) {
 			System.out.println("Check");
-			WebDriverManager.chromedriver().driverVersion("87").setup();
+			WebDriverManager.chromedriver().driverVersion("85").setup();
 			ChromeOptions chromeOptions=new ChromeOptions();
 			if(System.getProperty("os.name").contains("Win")) {
 				
