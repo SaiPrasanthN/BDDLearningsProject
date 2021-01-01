@@ -1,12 +1,14 @@
 package com.learnings.base;
 
 import java.io.FileInputStream;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
 
 import org.openqa.selenium.MutableCapabilities;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -15,7 +17,7 @@ import org.testng.annotations.Optional;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ObjectsInitializer {
-	public static ThreadLocal<RemoteWebDriver>driver=new ThreadLocal<RemoteWebDriver>();
+	public static ThreadLocal<WebDriver>driver=new ThreadLocal<WebDriver>();
 	public static Properties prop;
 	public MutableCapabilities capabilities;
 	public static String versionName=null;
@@ -24,7 +26,8 @@ public class ObjectsInitializer {
 	if(version  == null) {
 		if(browserName.contains("Chrome")) {
 			System.out.println("Check");
-			WebDriverManager.chromedriver().driverVersion("87.0").setup();
+			WebDriverManager.chromedriver().setup();
+		
 			ChromeOptions chromeOptions=new ChromeOptions();
 			if(System.getProperty("os.name").contains("Win")) {
 				
@@ -35,8 +38,7 @@ public class ObjectsInitializer {
 			chromeOptions.addArguments("--nosandbox");
 			chromeOptions.addArguments("--disable-dev-shm-usage");
 			chromeOptions.addArguments("-disable-browser-side-navigation");
-driver.set(new ChromeDriver(chromeOptions));
-			
+driver.set(new ChromeDriver(chromeOptions));	
 		}else if(browserName.contains("Firefox")) {
 			WebDriverManager.firefoxdriver().driverVersion("").setup();;
 		}else if(browserName.contains("Edge")) {
@@ -57,7 +59,7 @@ driver.set(new ChromeDriver(chromeOptions));
 	driver.get().manage().window().maximize();
 }
 	
-	public RemoteWebDriver getDriver() {
+	public WebDriver getDriver() {
 		return driver.get();
 	}
 	
