@@ -35,7 +35,7 @@ public class ObjectsInitializer {
 			chromeOptions.addArguments("--nosandbox");
 			chromeOptions.addArguments("--disable-dev-shm-usage");
 			chromeOptions.addArguments("-disable-browser-side-navigation");
-//			driver.set(new ChromeDriver(chromeOptions));
+driver.set(new ChromeDriver(chromeOptions));
 			
 		}else if(browserName.contains("Firefox")) {
 			WebDriverManager.firefoxdriver().driverVersion("").setup();;
