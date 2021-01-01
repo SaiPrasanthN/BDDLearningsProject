@@ -24,7 +24,7 @@ public class ObjectsInitializer {
 	if(version  == null) {
 		if(browserName.contains("Chrome")) {
 			System.out.println("Check");
-			WebDriverManager.chromedriver().driverVersion("85").setup();
+			WebDriverManager.chromedriver().driverVersion("87.0").setup();
 			ChromeOptions chromeOptions=new ChromeOptions();
 			if(System.getProperty("os.name").contains("Win")) {
 				
@@ -32,9 +32,9 @@ public class ObjectsInitializer {
 					chromeOptions.addArguments("--headless");
 					
 				}
-//			chromeOptions.addArguments("--nosandbox");
-//			chromeOptions.addArguments("--disable-dev-shm-usage");
-//			chromeOptions.addArguments("-disable-browser-side-navigation");
+			chromeOptions.addArguments("--nosandbox");
+			chromeOptions.addArguments("--disable-dev-shm-usage");
+			chromeOptions.addArguments("-disable-browser-side-navigation");
 			driver.set(new ChromeDriver(chromeOptions));
 			
 		}else if(browserName.contains("Firefox")) {
