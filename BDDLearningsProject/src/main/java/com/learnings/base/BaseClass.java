@@ -20,7 +20,7 @@ public class BaseClass extends ObjectsInitializer{
 	
 	@BeforeSuite
 	public void beforeSuite() throws IOException {
-		loadProperties(System.getProperty("user.dir")+"\\src\\main\\resources\\Properties\\config.properties");
+		loadProperties(System.getProperty("user.dir")+"/src/main/resources/Properties");
 	}
 	
 	  @BeforeClass(alwaysRun = true)
