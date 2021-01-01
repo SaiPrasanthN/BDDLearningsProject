@@ -30,10 +30,11 @@ public class ObjectsInitializer {
 				
 				}else {
 					chromeOptions.addArguments("--headless");
-					chromeOptions.addArguments("--nosandbox");
-					chromeOptions.addArguments("--disable-dev-shm-usage");
-					chromeOptions.addArguments("-disable-browser-side-navigation");
+					
 				}
+			chromeOptions.addArguments("--nosandbox");
+			chromeOptions.addArguments("--disable-dev-shm-usage");
+			chromeOptions.addArguments("-disable-browser-side-navigation");
 			driver.set(new ChromeDriver(chromeOptions));
 			
 		}else if(browserName.contains("Firefox")) {
