@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-01-01T08:05:38 PST" name="Default suite" finished-at="2021-01-01T08:06:19 PST" duration-ms="40323">
+    <groups>
+    </groups>
+    <test started-at="2021-01-01T08:05:38 PST" name="Default test" finished-at="2021-01-01T08:06:19 PST" duration-ms="40323">
+      <class name="com.learnings.runner.Runner">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.learnings.runner.Runner@4cc451f2]" started-at="2021-01-01T08:05:38 PST" name="beforeSuite" finished-at="2021-01-01T08:05:38 PST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.learnings.runner.Runner@4cc451f2]" started-at="2021-01-01T08:05:38 PST" name="setUpClass" finished-at="2021-01-01T08:05:38 PST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.learnings.runner.Runner@4cc451f2]" started-at="2021-01-01T08:05:38 PST" name="beforeMethod" finished-at="2021-01-01T08:05:46 PST" duration-ms="7918" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.learnings.runner.Runner@4cc451f2]" started-at="2021-01-01T08:05:46 PST" name="runScenario" description="Runs Cucumber Tests" data-provider="scenarios" finished-at="2021-01-01T08:05:49 PST" duration-ms="2173" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Scenario 1 for Feature 1 for BDD Learnings"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Feature 1 for BDD Learnings]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.learnings.runner.Runner@4cc451f2]" started-at="2021-01-01T08:05:49 PST" name="afterMethod" finished-at="2021-01-01T08:05:49 PST" duration-ms="654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.learnings.runner.Runner@4cc451f2]" started-at="2021-01-01T08:05:49 PST" name="beforeMethod" finished-at="2021-01-01T08:05:56 PST" duration-ms="6448" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.learnings.runner.Runner@4cc451f2]" started-at="2021-01-01T08:05:56 PST" name="runScenario" description="Runs Cucumber Tests" data-provider="scenarios" finished-at="2021-01-01T08:05:58 PST" duration-ms="2481" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Scenario 1 for Feature 1 for BDD Learnings"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Feature 1 for BDD Learnings]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.learnings.runner.Runner@4cc451f2]" started-at="2021-01-01T08:05:58 PST" name="afterMethod" finished-at="2021-01-01T08:05:59 PST" duration-ms="633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.learnings.runner.Runner@4cc451f2]" started-at="2021-01-01T08:05:59 PST" name="beforeMethod" finished-at="2021-01-01T08:06:06 PST" duration-ms="6729" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.learnings.runner.Runner@4cc451f2]" started-at="2021-01-01T08:06:06 PST" name="runScenario" description="Runs Cucumber Tests" data-provider="scenarios" finished-at="2021-01-01T08:06:08 PST" duration-ms="2722" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Scenario 1 for Feature 2 for BDD Learnings"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Feature 2 for BDD Learnings]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.learnings.runner.Runner@4cc451f2]" started-at="2021-01-01T08:06:08 PST" name="afterMethod" finished-at="2021-01-01T08:06:09 PST" duration-ms="682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.learnings.runner.Runner@4cc451f2]" started-at="2021-01-01T08:06:09 PST" name="beforeMethod" finished-at="2021-01-01T08:06:16 PST" duration-ms="6602" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.learnings.runner.Runner@4cc451f2]" started-at="2021-01-01T08:06:16 PST" name="runScenario" description="Runs Cucumber Tests" data-provider="scenarios" finished-at="2021-01-01T08:06:18 PST" duration-ms="2037" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Scenario 2 for Feature 1 for BDD Learnings"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Feature 2 for BDD Learnings]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.learnings.runner.Runner@4cc451f2]" started-at="2021-01-01T08:06:18 PST" name="afterMethod" finished-at="2021-01-01T08:06:18 PST" duration-ms="654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.learnings.runner.Runner@4cc451f2]" started-at="2021-01-01T08:06:18 PST" name="tearDownClass" finished-at="2021-01-01T08:06:19 PST" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.learnings.runner.Runner@4cc451f2]" started-at="2021-01-01T08:06:19 PST" name="afterSuite" finished-at="2021-01-01T08:06:19 PST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.learnings.runner.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

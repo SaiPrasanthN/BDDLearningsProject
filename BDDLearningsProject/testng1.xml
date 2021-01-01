@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Testing Suite" parallel="tests">
+
+
+<test thread-count="5" name="Test">
+                    
+ <parameter name="browserName" value="Chrome"></parameter>
+ <parameter name="version" value="81"></parameter>
+ <parameter name="platform" value="Windows 10"></parameter>
+
+
+    <classes>
+      <class name="com.learnings.runner.Runner"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Tests on Firefox">
+   <parameter name="browserName" value="Firefox"></parameter>
+ <parameter name="version" value="80"></parameter>
+ <parameter name="platform" value="Windows 10"></parameter>
+ 
+   <classes>
+       <class name="com.learnings.runner.Runner"/>
+    </classes>
+  
+  
+  </test>
+
+
+  
+</suite> <!-- Suite -->
