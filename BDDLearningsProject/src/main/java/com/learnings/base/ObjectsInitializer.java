@@ -23,6 +23,7 @@ public class ObjectsInitializer {
 	public void loadValues(@Optional String browserName,@Optional String version,@Optional  String platform) throws MalformedURLException {	
 	if(version  == null) {
 		if(browserName.contains("Chrome")) {
+			System.out.println("Check");
 			WebDriverManager.chromedriver().driverVersion("87").setup();;
 			ChromeOptions chromeOptions=new ChromeOptions();
 			if(System.getProperty("os.name").contains("Win")) {
