@@ -8,7 +8,7 @@ schedules:
   displayName: Sunday 3:00 AM (UTC) weekly latest version build
   branches:
     include:
-    -master
+    - master
   always: true
 trigger:
       branches:
