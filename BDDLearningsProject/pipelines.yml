@@ -4,12 +4,12 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 schedules:
-- cron: "0 12 * * Mon-Fri"
-  displayName: M-F 12:00 AM (UTC) daily build
+- cron: "0 3 * * Sun"
+  displayName: Sunday 3:00 AM (UTC) weekly latest version build
   branches:
     include:
-    - master
-  always - true
+    -master
+  always: true
 trigger:
       branches:
             include:
