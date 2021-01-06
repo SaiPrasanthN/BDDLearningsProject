@@ -3,6 +3,12 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
+schedules:
+- cron: "0 21 * * Mon-Fri"
+  displayName: M-F 12:00 AM (UTC) daily build
+  branches:
+    include:
+    - master
 trigger:
       branches:
             include:
