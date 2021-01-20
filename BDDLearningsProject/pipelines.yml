@@ -17,8 +17,8 @@ trigger:
                 - '*'
 stages: 
   jobs:
-- job: myJob
-  timeoutInMinutes: 0
+- job: Run_Acceptance_Tests
+    timeoutInMinutes: 180
    
 pool:
   vmImage: 'ubuntu-16.04'
