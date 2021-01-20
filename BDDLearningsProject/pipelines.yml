@@ -18,12 +18,8 @@ trigger:
 
    
 jobs:
-  - job: my_job
-    timeoutInMinutes: 120
-
-    pool:
-      vmImage: 'ubuntu-latest'
-      steps:
+  - job:
+    steps:
        - task: Maven@3
          inputs:
           mavenPomFile: 'BDDLearningsProject/pom.xml'
@@ -33,6 +29,11 @@ jobs:
           jdkArchitectureOption: 'x64'
           publishJUnitResults: true
           testResultsFiles: '**/surefire-reports/TEST-*.xml'
-          goals: 'clean install -DsuiteFile=$(suiteFile)'
+          goals: 'clean install -DsuiteFile=$(suiteFile)' 
+    timeoutInMinutes: 120
+
+    pool:
+      vmImage: 'ubuntu-latest'
+      
   
    
