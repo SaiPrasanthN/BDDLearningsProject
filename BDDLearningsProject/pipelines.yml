@@ -20,10 +20,7 @@ trigger:
 pool:
   vmImage: 'ubuntu-16.04'
   
-jobs:
-- job: Test
-  timeoutInMinutes: 10 # how long to run the job before automatically cancelling
-  cancelTimeoutInMinutes: 2 # how much time to give 'run always even if cancelled tasks' before stopping them
+
   
 steps:
 - task: Maven@3
@@ -37,5 +34,5 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean install -DsuiteFile=$(suiteFile)'
     
-- task: Maven@31
-  timeoutInMinutes: 0
+- task: VSTest@2
+  timeoutInMinutes: 1200
