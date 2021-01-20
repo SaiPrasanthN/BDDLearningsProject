@@ -27,7 +27,7 @@ pool:
 
 steps:
 - task: Maven@3
- inputs:
+  inputs:
     mavenPomFile: 'BDDLearningsProject/pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
