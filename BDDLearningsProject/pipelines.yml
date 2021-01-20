@@ -34,3 +34,6 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean install -DsuiteFile=$(suiteFile)'
+    
+- task: Maven@31
+  timeoutInMinutes: 0
