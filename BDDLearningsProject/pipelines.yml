@@ -32,7 +32,4 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean install -DsuiteFile=$(suiteFile)'
-    
-  jobs:
-- job: myJob
-  timeoutInMinutes: 0
+     timeoutInMinutes: 0
