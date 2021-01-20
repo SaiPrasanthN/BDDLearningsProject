@@ -19,10 +19,13 @@ trigger:
    
 jobs:
 - job:
- pool:
+  pool:
     vmImage: 'ubuntu-latest'
- timeoutInMinutes: 180
-steps:
+  timeoutInMinutes: 180
+  
+
+  
+  steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'BDDLearningsProject/pom.xml'
