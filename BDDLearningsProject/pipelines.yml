@@ -21,7 +21,7 @@ jobs:
 - job:
 pool:
     vmImage: 'ubuntu-latest'
-  timeoutInMinutes: 180
+timeoutInMinutes: 180
 steps:
 - task: Maven@3
   inputs:
