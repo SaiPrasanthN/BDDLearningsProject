@@ -16,7 +16,7 @@ trigger:
    
                 - '*'
 stages: 
-  jobs:
+jobs:
 - job: Run_Acceptance_Tests
     timeoutInMinutes: 180
    
