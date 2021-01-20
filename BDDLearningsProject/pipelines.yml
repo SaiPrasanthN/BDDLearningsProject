@@ -33,5 +33,6 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean install -DsuiteFile=$(suiteFile)'
     
-- task: Maven@31
+  jobs:
+- job: myJob
   timeoutInMinutes: 0
