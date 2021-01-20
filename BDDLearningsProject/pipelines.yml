@@ -14,12 +14,14 @@ trigger:
       branches:
             include:
                    - '*'
-jobs:
-- job: myJob
-  timeoutInMinutes: 0
+
    
 pool:
   vmImage: 'ubuntu-16.04'
+  
+  jobs:
+- job: myJob
+  timeoutInMinutes: 0
 
 steps:
 - task: Maven@3
