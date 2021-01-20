@@ -17,8 +17,11 @@ trigger:
                 - '*'
 
    
-pool:
-  vmImage: 'ubuntu-16.04'
+jobs:
+- job:
+  pool:
+    vmImage: 'ubuntu-latest'
+  timeoutInMinutes: 180
   
 
   
@@ -34,5 +37,3 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean install -DsuiteFile=$(suiteFile)'
     
-- task: VSTest@2
-  timeoutInMinutes: 1200
