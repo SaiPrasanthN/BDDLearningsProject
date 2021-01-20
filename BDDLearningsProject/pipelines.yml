@@ -20,7 +20,7 @@ trigger:
 jobs:
   - job: my_job
     timeoutInMinutes: 120
-    cancelTimeoutInMinutes: 3
+
     pool:
       vmImage: 'ubuntu-latest'
       steps:
@@ -33,6 +33,6 @@ jobs:
           jdkArchitectureOption: 'x64'
           publishJUnitResults: true
           testResultsFiles: '**/surefire-reports/TEST-*.xml'
-          goals: 'package'
+          goals: 'clean install -DsuiteFile=$(suiteFile)'
   
    
