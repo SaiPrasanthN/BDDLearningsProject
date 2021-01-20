@@ -13,8 +13,12 @@ schedules:
 trigger:
       branches:
             include:
-                   - '*'
-
+   
+                - '*'
+stages: 
+  jobs:
+- job: myJob
+  timeoutInMinutes: 0
    
 pool:
   vmImage: 'ubuntu-16.04'
@@ -32,4 +36,6 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'clean install -DsuiteFile=$(suiteFile)'
-     timeoutInMinutes: 0
+    
+- task: Maven@31
+  timeoutInMinutes: 0
