@@ -15,16 +15,16 @@ trigger:
             include:
    
                 - '*'
-jobs:
-- job: Test
-  timeoutInMinutes: 10 # how long to run the job before automatically cancelling
-  cancelTimeoutInMinutes: 2 # how much time to give 'run always even if cancelled tasks' before stopping them
+
    
 pool:
   vmImage: 'ubuntu-16.04'
   
-
-
+jobs:
+- job: Test
+  timeoutInMinutes: 10 # how long to run the job before automatically cancelling
+  cancelTimeoutInMinutes: 2 # how much time to give 'run always even if cancelled tasks' before stopping them
+  
 steps:
 - task: Maven@3
   inputs:
